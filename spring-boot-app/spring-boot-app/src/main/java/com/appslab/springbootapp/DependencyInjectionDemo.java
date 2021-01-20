@@ -1,8 +1,11 @@
 package com.appslab.springbootapp;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Arrays;
 import java.util.List;
 
+@Component
 public class DependencyInjectionDemo {
     EmployeeService employeeService;
 
@@ -19,6 +22,7 @@ public class DependencyInjectionDemo {
                 person.getInfo();
             }
         System.out.println("The summary of all salaries and bonuses is: " + getSum(employees));
+        employeeService.writeNumber();
     }
 
 
