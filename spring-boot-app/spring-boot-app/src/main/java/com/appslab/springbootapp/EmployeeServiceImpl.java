@@ -1,8 +1,6 @@
 package com.appslab.springbootapp;
 
 
-import com.appslab.springbootapp.model.Employee;
-
 import java.util.List;
 
 public class EmployeeServiceImpl implements EmployeeService {

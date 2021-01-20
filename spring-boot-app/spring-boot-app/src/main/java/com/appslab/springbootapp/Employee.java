@@ -1,4 +1,4 @@
-package com.appslab.springbootapp.model;
+package com.appslab.springbootapp;
 
 public class Employee {
     protected float salary;

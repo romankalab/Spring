@@ -1,4 +1,6 @@
-package com.appslab.springbootapp.model;
+package com.appslab.springbootapp;
+
+import com.appslab.springbootapp.Employee;
 
 public class Teacher extends Employee {
 
