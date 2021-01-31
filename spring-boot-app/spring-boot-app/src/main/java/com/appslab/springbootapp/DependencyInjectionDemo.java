@@ -29,5 +29,5 @@ public class DependencyInjectionDemo {
     float getSum(List<Employee> employees)
     {
         return (float) (employeeService.getTotalBonus(employees) + employeeService.getTotalSalary(employees));
-    };
+    }
 }
