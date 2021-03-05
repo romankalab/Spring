@@ -11,6 +11,7 @@ public class DependencyInjectionDemo {
 
 
     public DependencyInjectionDemo(EmployeeService employeeService) {
+        this.employeeService = employeeService;
         Programmer programmer = new Programmer(1254, 65);
         Teacher teacher = new Teacher(854, 36);
         Driver driver = new Driver(750, 41);
