@@ -35,9 +35,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.wisdom-framework</groupId>
+			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.34_1</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
