@@ -1,4 +1,4 @@
-package com.appslab.springbootapp;
+package com.appslab.springbootapp.Company;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

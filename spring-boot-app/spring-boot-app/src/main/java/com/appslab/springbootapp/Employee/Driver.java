@@ -1,6 +1,4 @@
-package com.appslab.springbootapp;
-
-import com.appslab.springbootapp.Employee;
+package com.appslab.springbootapp.Employee;
 
 public class Driver extends Employee {
 

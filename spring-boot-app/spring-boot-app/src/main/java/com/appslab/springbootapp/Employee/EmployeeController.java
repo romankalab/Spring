@@ -1,4 +1,4 @@
-package com.appslab.springbootapp;
+package com.appslab.springbootapp.Employee;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +17,9 @@ public class EmployeeController {
     Driver driver = new Driver(750, 41);
     List<Employee> employees = Arrays.asList(programmer, teacher, driver);
 
-    public static int solving(int towerHeigth, int stairHeigth, int stairLength)
+    public static int solving(int towerHeight, int stairHeight, int stairLength)
     {
-        int solvedProblem = (towerHeigth / stairHeigth) * stairLength;
-        return solvedProblem;
+        return (towerHeight / stairHeight) * stairLength;
     }
 
     public EmployeeController(EmployeeService employeeService) {
@@ -38,5 +37,5 @@ public class EmployeeController {
     double bonus() {
         return employeeService.getTotalBonus(employees);}
     @RequestMapping("/snail")
-    int snail(int towerHeigth, int stairHeigth, int stairLength) {return solving(towerHeigth, stairHeigth, stairLength);}
+    int snail(int towerHeight, int stairHeight, int stairLength) {return solving(towerHeight, stairHeight, stairLength);}
 }

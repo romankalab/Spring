@@ -1,5 +1,10 @@
-package com.appslab.springbootapp;
+package com.appslab.springbootapp.Components;
 
+import com.appslab.springbootapp.Employee.Employee;
+import com.appslab.springbootapp.Employee.Driver;
+import com.appslab.springbootapp.Employee.EmployeeService;
+import com.appslab.springbootapp.Employee.Programmer;
+import com.appslab.springbootapp.Employee.Teacher;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
