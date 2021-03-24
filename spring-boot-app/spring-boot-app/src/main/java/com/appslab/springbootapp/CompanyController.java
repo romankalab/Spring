@@ -14,7 +14,7 @@ public class CompanyController {
 
     @RequestMapping("/company")
     void company() {
-        Company company1 = new Company(1, "company1");
-        companyService.saveCompany(company1);
+        Company company = new Company("company");
+        companyService.saveCompany(company);
     }
 }

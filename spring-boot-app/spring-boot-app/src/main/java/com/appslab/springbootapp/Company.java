@@ -1,17 +1,19 @@
 package com.appslab.springbootapp;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Company {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
 
-    public Company(int id, String name) {
+    public Company(String name) {
         super();
-        this.id = id;
         this.name = name;
     }
 
