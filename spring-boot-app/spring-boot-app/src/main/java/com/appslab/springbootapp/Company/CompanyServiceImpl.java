@@ -1,8 +1,6 @@
 package com.appslab.springbootapp.Company;
 
-import com.appslab.springbootapp.Company.Company;
-import com.appslab.springbootapp.Company.CompanyRepository;
-import com.appslab.springbootapp.Company.CompanyService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +9,6 @@ public class CompanyServiceImpl implements CompanyService {
 
     @Autowired
     CompanyRepository companyRepository;
-
 
     @Override
     public void saveCompany(Company company) {

@@ -1,19 +1,25 @@
 package com.appslab.springbootapp.Company;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.appslab.springbootapp.Address.Address;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 
 @Entity
+@Table(name = "Company")
 public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
 
-    public Company(String name) {
-        super();
+    @JsonIgnore
+    @OneToOne
+    @JoinColumn(name = "address", nullable = false)
+    private Address address;
+
+    public Company(int id, String name) {
+        this.id = id;
         this.name = name;
     }
 
@@ -28,9 +34,5 @@ public class Company {
         return name;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-
-
+    public void setName(String name){ this.name = name; }
 }
